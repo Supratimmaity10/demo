@@ -51,10 +51,7 @@ public class Studentcontroller {
 		}
 	}
 	
-	@GetMapping("/count")
-	public long getCount() {
-		return studentservice.getCount();
-	}
+	
 	@GetMapping("/getStudentdetails/{name}")
 	public List<Student> getStudents(@PathVariable String name){
 		return studentservice.getAllStudents(name);
