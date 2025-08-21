@@ -42,7 +42,7 @@ public class Studentcontroller {
 			return new ResponseEntity<>(map,HttpStatus.OK);
 		} catch (Exception e) {
 			// TODO: handle exception
-			map.put("status", 0);
+			
 			map.put("message","Data not present");
 			map.put("error", e.getMessage());
 			return new ResponseEntity<>(map,HttpStatus.NOT_FOUND);
