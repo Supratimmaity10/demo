@@ -25,7 +25,7 @@ public class Studentcontroller {
 		return "API working";
 	}
 	
-	@PostMapping("/create")
+	@PostMapping("/createstudent")
 	public Student createStudent(@RequestBody Student student) {
 		return studentservice.createStudent(student);
 	}
