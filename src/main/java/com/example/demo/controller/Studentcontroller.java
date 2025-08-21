@@ -35,8 +35,10 @@ public class Studentcontroller {
 		Map<String, Object> map=new HashMap<>();
 		try {
 			Student s=studentservice.findStudent(id);
-			map.put("Status",1);
-			map.put("message","Success");
+			map.put("Stat_data",10);
+			map.put("process","Success");
+			map.put("message", "Success");
+			
 			map.put("data", s);
 			
 			return new ResponseEntity<>(map,HttpStatus.OK);
