@@ -14,8 +14,10 @@ public class Studentservice {
 	@Autowired
 	private StudentRepository studentRepository;
 	
-	public Student createStudent(Student student) {
-		return studentRepository.save(student);
+	public Student createStudent(Student s) {
+		
+		// this is to create student details
+		return studentRepository.save(s);
 	}
 	
 	public long getCount() {
