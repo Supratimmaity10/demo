@@ -53,12 +53,12 @@ public class Studentcontroller {
 	
 	
 	@GetMapping("/getStudentdetails/{name}")
-	public List<Student> getallStudentsdetails(@PathVariable String name){
+	public long getallStudentsdetails(@PathVariable String name){
 		Map<String, Object> map=new HashMap<>();
 		map.put("Stat_data",10);
 		map.put("process","Success");
 		map.put("message", "Success");
-		return studentservice.getAllStudents(name);
+		return studentservice.getCount();
 		
 		
 	}
